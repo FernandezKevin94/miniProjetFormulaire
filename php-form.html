@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP-BDD</title>
+</head>
+<body>
+
+    <form action="cnxConfig.php" method="POST">
+
+        <fieldset>
+            <legend>État Civil</legend>
+            <label name="Civ">Civilité</label> <br>
+            <input type="select" name="Civ"> <br>
+            <label for="">Nom</label> <br>
+            <input type="text"> <br>
+            <label for="">Prénom</label> <br>
+            <input type="text"> <br>
+            <label for="">Date de Naissance</label> <br>
+            <input type="date"> <br>
+            <label for="">Commune de Naissance</label> <br>
+            <input type="text"> <br>
+            <input type=""> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <label for="tel">Téléphone</label> <br>
+            <input type="tel"> <br>
+            <label for="mail">Courriel</label> <br>
+            <input type="email"> <br>
+            <label for="site">Site Web</label> <br>
+            <input type="url"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Compétences</legend>
+
+            <label for="anglais">Niveau d'anglais : C1
+            <input type="radio" name="anglais" value="C1">
+            B1 <input type="radio" name="anglais" value="B1"> 
+            A1 <input type="radio" name="anglais" value="A1">
+            </label> <br>
+
+            <label for="langInfor">Langages informatiques : HTML
+            <input type="checkbox" name="langInfor" value="html">
+            CSS <input type="checkbox" name="langInfor" value="css">
+            Javascript <input type="checkbox" name="langInfor" value="javascript">
+            PHP <input type="checkbox" name="langInfor" value="php">
+            </label>
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
