@@ -8,14 +8,15 @@ $pseudo = $_POST['pseudo'];
 $mdp = $_POST['mdp'];
 $idClient = $_POST['idClient'];
 
-$query = "SELECT id FROM client WHERE id = :idClient";
-$stmtCheck = $connexion->prepare($query);
+$stmtCheck = $connexion->prepare("SELECT id FROM client WHERE id = :idClient");
 $stmtCheck->bindParam(':idClient', $idClient, PDO::PARAM_INT);
 $stmtCheck->execute();
 
 if ($stmtCheck->rowCount() === 0) {
     die("Erreur : Aucun utilisateur avec l'ID fourni.");
 }
+
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 $queryInsert = "INSERT INTO compte (idClient, pseudo, mot_de_passe) 
                 VALUES (:idClient, :pseudo, :motDePasse)";
