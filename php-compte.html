@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+</head>
+
+<body>
+    <h1>Ajouter un compte</h1>
+    <form action="php-compte.php" method="POST">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" name="pseudo" id="pseudo" required>
+        <br> <br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="mdp" id="mdp" required>
+        <br><br>
+
+        <label for="idClient">ID Client</label>
+        <input type="number" name="idClient" id="idClient" required>
+        <br><br>
+
+        <button type="submit">Ajouter le compte</button>
+    </form>
+
+</body>
+
+</html>
